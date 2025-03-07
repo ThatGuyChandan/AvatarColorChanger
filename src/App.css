@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaeaea; /* Light gray background */
+}
+
+/* Centering the main container */
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Card that changes background color */
+.card {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Avatar Image */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Predefined Color Options */
+.color-picker-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+/* Custom Color Picker */
+.color-picker {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Reset Button */
+.reset-button {
+  padding: 8px 16px;
+  background-color: #ff6f47;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+  background-color: #e55b3c;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .color-option {
+    width: 35px;
+    height: 35px;
+  }
+
+  .color-picker {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reset-button {
+    padding: 6px 14px;
+  }
+}
